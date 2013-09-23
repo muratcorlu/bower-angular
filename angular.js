@@ -6727,7 +6727,7 @@ function createHttpBackend($browser, XHR, $browserDefer, callbacks, rawDocument,
         xhr.responseType = responseType;
       }
 
-      xhr.send(post || '');
+      xhr.send(post || null);
     }
 
     if (timeout > 0) {
